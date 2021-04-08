@@ -4,6 +4,15 @@ body {
 
 .navbar {
     width: 100%;
-    height: 75px;
-    background-color: red;
+    height: 100px;
+    background-color: #e63946;
+    font-family: 'Special Elite', cursive;
+    color: #f1faeedd;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    text-justify: inter-word;
+    text-align: center;
+    font-size: 40px;
 }
