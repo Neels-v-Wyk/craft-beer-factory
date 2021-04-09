@@ -3,18 +3,20 @@ function createNavbar(element) {
     navbar.classList.add("navbar");
     navbar.innerText = "Craft Beer Restaurant"
     element.appendChild(navbar);
-    // addButton("Home");
+    addButton("Home", null, console.log("button works"));
     // addButton("Menu");
     // addButton("Contact");
 }
 
-function addButton(buttonName) {
+function addButton(buttonName, parentElement, tabFunction) {
+
     button = document.createElement("button");
     button.classList.add("page-selector");
     button.textContent = buttonName;
-    button.addEventListener("click", (e) = > {
+    button.addEventListener("click", (e) => {
         if (e.target.classList.contains("current-page")) { return };
         makeActiveTab(button);
+        tabFunction();
     });
 }
 
