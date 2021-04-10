@@ -1,19 +1,20 @@
 export default function addButtons(parentElement) {
+    var buttons = document.createElement("div")
     var form = document.createElement("form");
-    console.log(form)
 
-    var homeButton = new Button("radio", "Home", "home", false, null);
-    var menuButton = new Button("radio", "Menu", "menu", false, null);
-    var contactButton = new Button("radio", "Contact", "contact", false, null);
+    buttons.id = "button-div"
+
+    var homeButton = new Button("radio", "tab-buttons", "Home", true, null);
+    var menuButton = new Button("radio", "tab-buttons", "Menu", false, null);
+    var contactButton = new Button("radio", "tab-buttons", "Contact", false, null);
 
     form.appendChild(homeButton.createButton);
     form.appendChild(menuButton.createButton);
     form.appendChild(contactButton.createButton);
 
-    // form.appendChild(menuButton());
-    // form.appendChild(contactButton());
+    buttons.appendChild(form);
 
-    parentElement.appendChild(form);
+    parentElement.appendChild(buttons);
     
 }
 
@@ -37,7 +38,9 @@ class Button {
         buttonInput.name = this.Bname
         buttonInput.id = this.Bname
         buttonLabel.htmlFor = this.Bname
-        buttonLabel.innerHTML = this.Bname
+        buttonLabel.innerHTML = this.Bvalue
+
+        buttonDiv.classList.add("button")
 
         buttonDiv.appendChild(buttonInput);
         buttonDiv.appendChild(buttonLabel);
