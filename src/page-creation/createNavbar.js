@@ -5,7 +5,7 @@ function createNavbar(element) {
     navbar.classList.add("navbar");
 
     var titleText = document.createElement("h1");
-    titleText.innerText = "Craft Beer Restaurant"
+    titleText.innerText = "Craft Beer Factory"
     titleText.classList.add("titleText")
 
     navbar.appendChild(titleText);

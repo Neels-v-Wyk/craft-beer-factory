@@ -21,6 +21,8 @@ export default function addButtons(parentElement) {
 
     parentElement.appendChild(buttons);
     
+    // need this for initial load
+    createHomeTab(parentElement);
 }
 
 class Button {
@@ -65,7 +67,7 @@ class Button {
         buttonDiv.addEventListener("click", (e) => {
             makeActive(e);
             this.pageLoadFunction
-            this.destroyPage();
+            this.destroyTab();
         });
 
         return buttonDiv;
