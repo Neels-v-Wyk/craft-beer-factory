@@ -16,7 +16,7 @@
   \*********************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"body {\\n    background-color: #edf6f9;\\n}\\n\\n.navbar {\\n    width: 100%;\\n    height: 150px;\\n    background-color: #e29578;\\n    font-family: 'Special Elite', cursive;\\n    color: #ffddd2;\\n    display: flex;\\n    flex-wrap: wrap;\\n    align-items: center;\\n    vertical-align: middle;\\n    justify-content: center;\\n    text-align: center;\\n    font-size: 24px;\\n}\\n\\n.titleText {\\n    font-weight: lighter;\\n    position: relative;\\n    top: -15px;\\n}\\n\\n#button-div {\\n    width: 100%;\\n    display: flex;\\n    flex-direction: column;\\n}\\n\\n#button {\\n\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://craft-beer-restaurant/./src/styles/styles.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"body {\\n    background-color: #e8eddf;\\n    margin: 0px;\\n}\\n\\n.navbar {\\n    width: 100%;\\n    height: 110px;\\n    background-color: #333533;\\n    font-family: 'Special Elite', cursive;\\n    color: #e8eddf;\\n    display: flex;\\n    flex-direction: column;\\n    align-items: center;\\n    text-align: center;\\n    font-size: 24px;\\n    padding-bottom: 10px;\\n}\\n\\n.titleText {\\n    font-weight: lighter;\\n    position: relative;\\n    top: -15px;\\n}\\n\\n#button-div {\\n    width: 100%;\\n    display: flex;\\n    background-color: #242423;\\n    position: relative;\\n    bottom: 35px;\\n    margin-top: -15px;\\n}\\n\\n.tabForm {\\n    display: flex;\\n    justify-content: space-between;\\n    flex-grow: 1;\\n    margin-right: 5vw;\\n    margin-left: 5vw;\\n}\\n\\n.button {\\n    font-size: 25px;\\n    color: #f5cb5c;\\n    background-color: #242423;\\n    width: 100%;\\n    padding-top: 10px;\\n    z-index: 100;\\n}\\n\\n\\n.button:hover {\\n    color: #f1faee;\\n    background-color:#f5cb5c;\\n}\\n\\n.activeTab {\\n    background-color: #f5cb5cdd;\\n    color: #333533;\\n}\\n\\ninput {\\n    -webkit-appearance: none;\\n    -moz-appearance: none;\\n    appearance: none;\\n    position: relative;\\n    z-index: -10;\\n\\n}\\n\\nlabel {\\n    position: relative;\\n    z-index: -10;\\n}\\n\\n@media screen and (min-width: 600px) {\\n    .button {\\n      font-size: 40px;\\n    }\\n\\n    .titleText {\\n        font-size: 60px;\\n    }\\n\\n    .tabForm {\\n        margin-right: 30vw;\\n        margin-left: 30vw;    \\n    }\\n\\n    #button-div {\\n        bottom: 30px;\\n    }\\n}  \\n\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://craft-beer-restaurant/./src/styles/styles.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -50,13 +50,23 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 
 /***/ }),
 
+/***/ "./src/assets/beer.svg":
+/*!*****************************!*\
+  !*** ./src/assets/beer.svg ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"e759189ee2b0d2da3e07.svg\";\n\n//# sourceURL=webpack://craft-beer-restaurant/./src/assets/beer.svg?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/styles.css */ \"./src/styles/styles.css\");\n/* harmony import */ var _page_creation_createPage_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./page-creation/createPage.js */ \"./src/page-creation/createPage.js\");\n\n\n\nvar content = document.getElementById(\"content\");\n(0,_page_creation_createPage_js__WEBPACK_IMPORTED_MODULE_1__.default)(content);\n\n//# sourceURL=webpack://craft-beer-restaurant/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/styles.css */ \"./src/styles/styles.css\");\n/* harmony import */ var _page_creation_createPage_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./page-creation/createPage.js */ \"./src/page-creation/createPage.js\");\n\n\n\n\nvar content = document.getElementById(\"content\");\n(0,_page_creation_createPage_js__WEBPACK_IMPORTED_MODULE_1__.default)(content);\n\n//# sourceURL=webpack://craft-beer-restaurant/./src/index.js?");
 
 /***/ }),
 
@@ -66,7 +76,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
   \*****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ addButtons)\n/* harmony export */ });\nfunction addButtons(parentElement) {\n    var buttons = document.createElement(\"div\")\n    var form = document.createElement(\"form\");\n\n    buttons.id = \"button-div\"\n\n    var homeButton = new Button(\"radio\", \"tab-buttons\", \"Home\", true, null);\n    var menuButton = new Button(\"radio\", \"tab-buttons\", \"Menu\", false, null);\n    var contactButton = new Button(\"radio\", \"tab-buttons\", \"Contact\", false, null);\n\n    form.appendChild(homeButton.createButton);\n    form.appendChild(menuButton.createButton);\n    form.appendChild(contactButton.createButton);\n\n    buttons.appendChild(form);\n\n    parentElement.appendChild(buttons);\n    \n}\n\nclass Button {\n    constructor(Btype, Bname, Bvalue, Bdefault, pageLoadFunction) {\n        this.Btype = Btype;\n        this.Bname = Bname;\n        this.Bvalue = Bvalue;\n        this.Bdefault = Bdefault;\n        this.pageLoadFunction = pageLoadFunction;\n    }\n\n    get createButton() {\n        var buttonDiv = document.createElement(\"div\");\n        var buttonInput = document.createElement(\"input\");\n        var buttonLabel = document.createElement(\"label\");\n\n        buttonInput.type = this.Btype\n        buttonInput.value = this.Bvalue\n        buttonInput.checked = this.Bdefault\n        buttonInput.name = this.Bname\n        buttonInput.id = this.Bname\n        buttonLabel.htmlFor = this.Bname\n        buttonLabel.innerHTML = this.Bvalue\n\n        buttonDiv.classList.add(\"button\")\n\n        buttonDiv.appendChild(buttonInput);\n        buttonDiv.appendChild(buttonLabel);\n\n        return buttonDiv;\n    }\n}\n\n//# sourceURL=webpack://craft-beer-restaurant/./src/page-creation/addButtons.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ addButtons)\n/* harmony export */ });\n/* harmony import */ var _createHomeTab_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./createHomeTab.js */ \"./src/page-creation/createHomeTab.js\");\n/* harmony import */ var _createMenuTab_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./createMenuTab.js */ \"./src/page-creation/createMenuTab.js\");\n/* harmony import */ var _createContactTab_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./createContactTab.js */ \"./src/page-creation/createContactTab.js\");\n\n\n\n\nfunction addButtons(parentElement) {\n    var buttons = document.createElement(\"div\")\n    var form = document.createElement(\"form\");\n\n    buttons.id = \"button-div\"\n\n    var homeButton = new Button(\"radio\", \"tab-buttons\", \"Home\", true, test());\n    var menuButton = new Button(\"radio\", \"tab-buttons\", \"Menu\", false, null);\n    var contactButton = new Button(\"radio\", \"tab-buttons\", \"Contact\", false, null);\n\n    form.appendChild(homeButton.createButton);\n    form.appendChild(menuButton.createButton);\n    form.appendChild(contactButton.createButton);\n\n    form.classList.add(\"tabForm\");\n    buttons.appendChild(form);\n\n    parentElement.appendChild(buttons);\n    \n    // need this for initial load\n    (0,_createHomeTab_js__WEBPACK_IMPORTED_MODULE_0__.default)(parentElement);\n}\n\nclass Button {\n    constructor(Btype, Bname, Bvalue, Bdefault, pageLoadFunction) {\n        this.Btype = Btype;\n        this.Bname = Bname;\n        this.Bvalue = Bvalue;\n        this.Bdefault = Bdefault;\n        this.pageLoadFunction = pageLoadFunction;\n    }\n\n    createTab() {\n        this.pageLoadFunction()\n    }\n\n    destroyTab() {\n        document.getElementById(\"tab\").remove()\n    }\n\n    get createButton() {\n        var buttonDiv = document.createElement(\"div\");\n        var buttonInput = document.createElement(\"input\");\n        var buttonLabel = document.createElement(\"label\");\n\n        buttonInput.type = this.Btype\n        buttonInput.value = this.Bvalue\n        buttonInput.checked = this.Bdefault\n        buttonInput.name = this.Bname\n        buttonInput.id = this.Bvalue\n        buttonLabel.htmlFor = this.Bvalue\n        buttonLabel.innerHTML = this.Bvalue\n\n        buttonDiv.classList.add(\"button\")\n\n        buttonDiv.appendChild(buttonInput);\n        buttonDiv.appendChild(buttonLabel);\n\n        if (this.Bdefault) {\n            buttonDiv.classList.add(\"activeTab\")\n        }\n\n        buttonDiv.addEventListener(\"click\", (e) => {\n            makeActive(e);\n            this.pageLoadFunction\n            this.destroyTab();\n        });\n\n        return buttonDiv;\n    }\n}\n\nfunction makeActive(e) {\n    var currentActive = document.getElementsByClassName(\"activeTab\");\n    currentActive[0].classList.remove(\"activeTab\");\n\n    e.toElement.classList.add(\"activeTab\")\n}\n\nfunction test() {\n    console.log(\"e\");\n}\n\n//# sourceURL=webpack://craft-beer-restaurant/./src/page-creation/addButtons.js?");
 
 /***/ }),
 
@@ -80,13 +90,43 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/page-creation/createContactTab.js":
+/*!***********************************************!*\
+  !*** ./src/page-creation/createContactTab.js ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createContactTab)\n/* harmony export */ });\nfunction createContactTab(element) {\n    \n}\n\n//# sourceURL=webpack://craft-beer-restaurant/./src/page-creation/createContactTab.js?");
+
+/***/ }),
+
+/***/ "./src/page-creation/createHomeTab.js":
+/*!********************************************!*\
+  !*** ./src/page-creation/createHomeTab.js ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createHomeTab)\n/* harmony export */ });\n/* harmony import */ var _assets_beer_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../assets/beer.svg */ \"./src/assets/beer.svg\");\n\n\nfunction createHomeTab(parentElement) {\n    var beerImage = new Image();\n    beerImage.src = _assets_beer_svg__WEBPACK_IMPORTED_MODULE_0__;\n    parentElement.appendChild(beerImage);\n}\n\n//# sourceURL=webpack://craft-beer-restaurant/./src/page-creation/createHomeTab.js?");
+
+/***/ }),
+
+/***/ "./src/page-creation/createMenuTab.js":
+/*!********************************************!*\
+  !*** ./src/page-creation/createMenuTab.js ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createMenuTab)\n/* harmony export */ });\nfunction createMenuTab() {\n    \n}\n\n//# sourceURL=webpack://craft-beer-restaurant/./src/page-creation/createMenuTab.js?");
+
+/***/ }),
+
 /***/ "./src/page-creation/createNavbar.js":
 /*!*******************************************!*\
   !*** ./src/page-creation/createNavbar.js ***!
   \*******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createNavbar)\n/* harmony export */ });\n/* harmony import */ var _addButtons_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./addButtons.js */ \"./src/page-creation/addButtons.js\");\n\n\nfunction createNavbar(element) {\n    var navbar = document.createElement(\"div\");\n    navbar.classList.add(\"navbar\");\n\n    var titleText = document.createElement(\"h1\");\n    titleText.innerText = \"Craft Beer Restaurant\"\n    titleText.classList.add(\"titleText\")\n\n    navbar.appendChild(titleText);\n\n    (0,_addButtons_js__WEBPACK_IMPORTED_MODULE_0__.default)(navbar)\n\n    element.appendChild(navbar);\n};\n\n \n\n//# sourceURL=webpack://craft-beer-restaurant/./src/page-creation/createNavbar.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createNavbar)\n/* harmony export */ });\n/* harmony import */ var _addButtons_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./addButtons.js */ \"./src/page-creation/addButtons.js\");\n\n\nfunction createNavbar(element) {\n    var navbar = document.createElement(\"div\");\n    navbar.classList.add(\"navbar\");\n\n    var titleText = document.createElement(\"h1\");\n    titleText.innerText = \"Craft Beer Factory\"\n    titleText.classList.add(\"titleText\")\n\n    navbar.appendChild(titleText);\n\n    (0,_addButtons_js__WEBPACK_IMPORTED_MODULE_0__.default)(navbar)\n\n    element.appendChild(navbar);\n};\n\n \n\n//# sourceURL=webpack://craft-beer-restaurant/./src/page-creation/createNavbar.js?");
 
 /***/ }),
 
@@ -165,6 +205,11 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		__webpack_require__.p = "/webpack-democraft-beer-restaurant/";
 /******/ 	})();
 /******/ 	
 /************************************************************************/
