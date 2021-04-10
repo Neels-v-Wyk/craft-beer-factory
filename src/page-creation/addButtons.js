@@ -1,13 +1,19 @@
-function addButtons(parentElement) {
+export default function addButtons(parentElement) {
     var form = document.createElement("form");
+    console.log(form)
 
     var homeButton = new Button("radio", "Home", "home", false, null);
+    var menuButton = new Button("radio", "Menu", "menu", false, null);
+    var contactButton = new Button("radio", "Contact", "contact", false, null);
 
-    form.appendChild(homeButton);
+    form.appendChild(homeButton.createButton);
+    form.appendChild(menuButton.createButton);
+    form.appendChild(contactButton.createButton);
+
     // form.appendChild(menuButton());
     // form.appendChild(contactButton());
 
-    parentElement.appendChild(form)
+    parentElement.appendChild(form);
     
 }
 
@@ -39,5 +45,3 @@ class Button {
         return buttonDiv;
     }
 }
-
-export {addButtons as default}; 

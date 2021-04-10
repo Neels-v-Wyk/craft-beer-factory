@@ -60,6 +60,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 
 /***/ }),
 
+/***/ "./src/page-creation/addButtons.js":
+/*!*****************************************!*\
+  !*** ./src/page-creation/addButtons.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ addButtons)\n/* harmony export */ });\nfunction addButtons(parentElement) {\n    var form = document.createElement(\"form\");\n    console.log(form)\n\n    var homeButton = new Button(\"radio\", \"Home\", \"home\", false, null);\n    var menuButton = new Button(\"radio\", \"Menu\", \"menu\", false, null);\n    var contactButton = new Button(\"radio\", \"Contact\", \"contact\", false, null);\n\n    form.appendChild(homeButton.createButton);\n    form.appendChild(menuButton.createButton);\n    form.appendChild(contactButton.createButton);\n\n    // form.appendChild(menuButton());\n    // form.appendChild(contactButton());\n\n    parentElement.appendChild(form);\n    \n}\n\nclass Button {\n    constructor(Btype, Bname, Bvalue, Bdefault, pageLoadFunction) {\n        this.Btype = Btype;\n        this.Bname = Bname;\n        this.Bvalue = Bvalue;\n        this.Bdefault = Bdefault;\n        this.pageLoadFunction = pageLoadFunction;\n    }\n\n    get createButton() {\n        var buttonDiv = document.createElement(\"div\");\n        var buttonInput = document.createElement(\"input\");\n        var buttonLabel = document.createElement(\"label\");\n\n        buttonInput.type = this.Btype\n        buttonInput.value = this.Bvalue\n        buttonInput.checked = this.Bdefault\n        buttonInput.name = this.Bname\n        buttonInput.id = this.Bname\n        buttonLabel.htmlFor = this.Bname\n        buttonLabel.innerHTML = this.Bname\n\n        buttonDiv.appendChild(buttonInput);\n        buttonDiv.appendChild(buttonLabel);\n\n        return buttonDiv;\n    }\n}\n\n//# sourceURL=webpack://craft-beer-restaurant/./src/page-creation/addButtons.js?");
+
+/***/ }),
+
 /***/ "./src/page-creation/addFonts.js":
 /*!***************************************!*\
   !*** ./src/page-creation/addFonts.js ***!
@@ -76,7 +86,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createNavbar)\n/* harmony export */ });\nfrom\n\nfunction createNavbar(element) {\n    var navbar = document.createElement(\"div\");\n    navbar.classList.add(\"navbar\");\n\n    var titleText = document.createElement(\"h1\");\n    titleText.innerText = \"Craft Beer Restaurant\"\n    titleText.classList.add(\"titleText\")\n    // addButton(\"stuff\")\n    // addButton(\"Menu\");\n    // addButton(\"Contact\");\n\n    navbar.appendChild(titleText);\n    element.appendChild(navbar);\n};\n\n \n\n//# sourceURL=webpack://craft-beer-restaurant/./src/page-creation/createNavbar.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createNavbar)\n/* harmony export */ });\n/* harmony import */ var _addButtons_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./addButtons.js */ \"./src/page-creation/addButtons.js\");\n\n\nfunction createNavbar(element) {\n    var navbar = document.createElement(\"div\");\n    navbar.classList.add(\"navbar\");\n\n    var titleText = document.createElement(\"h1\");\n    titleText.innerText = \"Craft Beer Restaurant\"\n    titleText.classList.add(\"titleText\")\n\n    navbar.appendChild(titleText);\n\n    (0,_addButtons_js__WEBPACK_IMPORTED_MODULE_0__.default)(navbar)\n\n    element.appendChild(navbar);\n};\n\n \n\n//# sourceURL=webpack://craft-beer-restaurant/./src/page-creation/createNavbar.js?");
 
 /***/ }),
 
