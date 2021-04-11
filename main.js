@@ -56,7 +56,7 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
   \*****************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"e759189ee2b0d2da3e07.svg\";\n\n//# sourceURL=webpack://craft-beer-restaurant/./src/assets/beer.svg?");
+eval("module.exports = __webpack_require__.p + \"446a0ade817773a6973e.svg\";\n\n//# sourceURL=webpack://craft-beer-restaurant/./src/assets/beer.svg?");
 
 /***/ }),
 
