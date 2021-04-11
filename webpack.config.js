@@ -2,16 +2,16 @@ const path = require('path');
 
 module.exports = {
   entry: './src/index.js',
-  mode: "development",
+  mode: "production",
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: "/webpack-democraft-beer-restaurant/",
+    publicPath: "/craft-beer-factory/",
   },
   module: {
     rules: [
       {
-        test: /\.css$/,
+        test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
       },
      {

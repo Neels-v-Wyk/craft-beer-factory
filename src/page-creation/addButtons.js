@@ -82,5 +82,5 @@ function makeActive(e) {
 }
 
 function test() {
-    console.log("e");
+    console.log("test function ran from addButton.js");
 }
