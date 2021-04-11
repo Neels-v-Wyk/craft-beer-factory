@@ -5,5 +5,6 @@ export default function createHomeTab(parentElement) {
     console.log(beerIcon)
 
     beerImage.src = beerIcon;
+    beerImage.classList.add("beerIcon")
     parentElement.appendChild(beerImage);
 }
