@@ -1,10 +1,11 @@
 {
-  "name": "craft-beer-restaurant",
+  "name": "craft-beer-factory",
   "version": "1.0.0",
   "description": "An exercise to learn webpack and frontend in general",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
     "deploy": "gh-pages -d dist"
   },
   "author": "",
