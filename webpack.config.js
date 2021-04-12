@@ -5,8 +5,8 @@ module.exports = {
   mode: "production",
   output: {
     filename: 'main.js',
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: "/craft-beer-factory/",
+    path: path.resolve(__dirname, 'docs/'),
+    publicPath: "docs/",
   },
   module: {
     rules: [
@@ -21,3 +21,9 @@ module.exports = {
     ],
   },
 };
+
+devServer = {
+  inline: true,
+  host: "0.0.0.0",
+  port: 5500
+}
