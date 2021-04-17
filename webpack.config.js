@@ -5,7 +5,7 @@ module.exports = {
   mode: "production",
   output: {
     filename: 'main.js',
-    publicPath: "/craft-beer-restaurant/",
+    publicPath: "",
   },
   module: {
     rules: [
