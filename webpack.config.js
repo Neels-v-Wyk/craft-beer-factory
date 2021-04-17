@@ -5,8 +5,8 @@ module.exports = {
   mode: "production",
   output: {
     filename: 'main.js',
-    path: path.resolve(__dirname, '/'),
-    publicPath: "docs/",
+    path: path.resolve(__dirname, 'docs/'),
+    publicPath: "",
   },
   module: {
     rules: [
