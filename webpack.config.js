@@ -6,7 +6,7 @@ module.exports = {
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'docs/'),
-    publicPath: "/craft-beer-factory/docs/",
+    publicPath: "craft-beer-factory/docs/",
   },
   module: {
     rules: [
