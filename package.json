@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "deploy": "gh-pages -d dist"
+
   },
   "author": "",
   "license": "ISC",
@@ -22,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/Neels-v-Wyk/craft-beer-restaurant/issues"
   },
-  "homepage": "https://github.com/Neels-v-Wyk/craft-beer-restaurant#readme"
+  "homepage": "https://github.com/Neels-v-Wyk/craft-beer-restaurant#readme",
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  }
 }
