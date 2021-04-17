@@ -1,4 +1,4 @@
-import beerIcon from "../assets/beer.svg"
+import beerIcon from "../assets/beer.png"
 
 export default function createHomeTab(parentElement) {
     parentElement.appendChild(createBeer());
