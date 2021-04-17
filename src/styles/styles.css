@@ -75,11 +75,10 @@ label {
 }
 
 .beerDiv {
-    width: 300px;
+    width: 300px !important;
 }
 
 .beerImage {
-    width: 300px;
 }
 
 @media screen and (min-width: 600px) {
