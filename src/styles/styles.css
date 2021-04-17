@@ -79,6 +79,7 @@ label {
 }
 
 .beerImage {
+    width: 300px;
 }
 
 @media screen and (min-width: 600px) {
