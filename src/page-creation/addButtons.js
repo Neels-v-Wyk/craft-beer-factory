@@ -21,7 +21,7 @@ export default function addButtons(parentElement) {
 
     parentElement.appendChild(buttons);
     
-    // need this for initial load
+    // need this for initial pageload
     createHomeTab(parentElement);
 }
 

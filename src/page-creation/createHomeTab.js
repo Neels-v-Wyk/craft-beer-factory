@@ -3,8 +3,6 @@ import beerIcon from "../assets/beer.png"
 export default function createHomeTab(parentElement) {
     parentElement.appendChild(createBeer());
     parentElement.appendChild(createIntro());
-
-
 }
 
 function createBeer() {
@@ -18,7 +16,6 @@ function createBeer() {
     beerDiv.appendChild(beerImage)
 
     return beerDiv;
-
 }
 
 function createIntro() {
