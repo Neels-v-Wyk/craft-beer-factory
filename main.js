@@ -1,1 +1,233 @@
-(()=>{"use strict";var n={772:(n,e,t)=>{t.d(e,{Z:()=>i});var a=t(645),o=t.n(a)()((function(n){return n[1]}));o.push([n.id,"body {\n    background-color: #e8eddf;\n    margin: 0px;\n}\n\n.navbar {\n    width: 100%;\n    height: 110px;\n    background-color: #333533;\n    font-family: 'Special Elite', cursive;\n    color: #e8eddf;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    text-align: center;\n    font-size: 24px;\n    padding-bottom: 10px;\n}\n\n.titleText {\n    font-weight: lighter;\n    position: relative;\n    top: -15px;\n}\n\n#button-div {\n    width: 100%;\n    display: flex;\n    background-color: #242423;\n    position: relative;\n    bottom: 35px;\n    margin-top: -15px;\n}\n\n.tabForm {\n    display: flex;\n    justify-content: space-between;\n    flex-grow: 1;\n    margin-right: 5vw;\n    margin-left: 5vw;\n}\n\n.button {\n    font-size: 25px;\n    color: #f5cb5c;\n    background-color: #242423;\n    width: 100%;\n    padding-top: 10px;\n    z-index: 100;\n}\n\n\n.button:hover {\n    color: #f1faee;\n    background-color:#f5cb5c;\n}\n\n.activeTab {\n    background-color: #f5cb5cdd;\n    color: #333533;\n}\n\ninput {\n    -webkit-appearance: none;\n    -moz-appearance: none;\n    appearance: none;\n    position: relative;\n    z-index: -10;\n\n}\n\nlabel {\n    position: relative;\n    z-index: -10;\n}\n\n.beerDiv {\n    height: 200px;\n}\n\n.beerIcon {\n    height: 100%;\n}\n\n.intro {\n    color: #242423;\n    font-weight: bold;    \n    font-family: 'Nunito', sans-serif;\n\n}\n\n.info {\n    font-family: 'Nunito', sans-serif;\n    color: #242423;\n    max-width: 900px;\n    font-size: 20px;\n}\n\n@media screen and (min-width: 600px) {\n    .button {\n      font-size: 40px;\n    }\n\n    .titleText {\n        font-size: 60px;\n    }\n\n    .tabForm {\n        margin-right: 30vw;\n        margin-left: 30vw;    \n    }\n\n    #button-div {\n        bottom: 30px;\n    }\n\n    .beerDiv {\n        height: 300px;\n    }\n    \n    .intro {\n        font-size: 40px;\n    }\n\n    .info {\n        font-size: 30px;\n    }\n\n}  \n\n",""]);const i=o},645:n=>{n.exports=function(n){var e=[];return e.toString=function(){return this.map((function(e){var t=n(e);return e[2]?"@media ".concat(e[2]," {").concat(t,"}"):t})).join("")},e.i=function(n,t,a){"string"==typeof n&&(n=[[null,n,""]]);var o={};if(a)for(var i=0;i<this.length;i++){var r=this[i][0];null!=r&&(o[r]=!0)}for(var c=0;c<n.length;c++){var s=[].concat(n[c]);a&&o[s[0]]||(t&&(s[2]?s[2]="".concat(t," and ").concat(s[2]):s[2]=t),e.push(s))}},e}},379:(n,e,t)=>{var a,o=function(){var n={};return function(e){if(void 0===n[e]){var t=document.querySelector(e);if(window.HTMLIFrameElement&&t instanceof window.HTMLIFrameElement)try{t=t.contentDocument.head}catch(n){t=null}n[e]=t}return n[e]}}(),i=[];function r(n){for(var e=-1,t=0;t<i.length;t++)if(i[t].identifier===n){e=t;break}return e}function c(n,e){for(var t={},a=[],o=0;o<n.length;o++){var c=n[o],s=e.base?c[0]+e.base:c[0],d=t[s]||0,l="".concat(s," ").concat(d);t[s]=d+1;var u=r(l),p={css:c[1],media:c[2],sourceMap:c[3]};-1!==u?(i[u].references++,i[u].updater(p)):i.push({identifier:l,updater:h(p,e),references:1}),a.push(l)}return a}function s(n){var e=document.createElement("style"),a=n.attributes||{};if(void 0===a.nonce){var i=t.nc;i&&(a.nonce=i)}if(Object.keys(a).forEach((function(n){e.setAttribute(n,a[n])})),"function"==typeof n.insert)n.insert(e);else{var r=o(n.insert||"head");if(!r)throw new Error("Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.");r.appendChild(e)}return e}var d,l=(d=[],function(n,e){return d[n]=e,d.filter(Boolean).join("\n")});function u(n,e,t,a){var o=t?"":a.media?"@media ".concat(a.media," {").concat(a.css,"}"):a.css;if(n.styleSheet)n.styleSheet.cssText=l(e,o);else{var i=document.createTextNode(o),r=n.childNodes;r[e]&&n.removeChild(r[e]),r.length?n.insertBefore(i,r[e]):n.appendChild(i)}}function p(n,e,t){var a=t.css,o=t.media,i=t.sourceMap;if(o?n.setAttribute("media",o):n.removeAttribute("media"),i&&"undefined"!=typeof btoa&&(a+="\n/*# sourceMappingURL=data:application/json;base64,".concat(btoa(unescape(encodeURIComponent(JSON.stringify(i))))," */")),n.styleSheet)n.styleSheet.cssText=a;else{for(;n.firstChild;)n.removeChild(n.firstChild);n.appendChild(document.createTextNode(a))}}var f=null,m=0;function h(n,e){var t,a,o;if(e.singleton){var i=m++;t=f||(f=s(e)),a=u.bind(null,t,i,!1),o=u.bind(null,t,i,!0)}else t=s(e),a=p.bind(null,t,e),o=function(){!function(n){if(null===n.parentNode)return!1;n.parentNode.removeChild(n)}(t)};return a(n),function(e){if(e){if(e.css===n.css&&e.media===n.media&&e.sourceMap===n.sourceMap)return;a(n=e)}else o()}}n.exports=function(n,e){(e=e||{}).singleton||"boolean"==typeof e.singleton||(e.singleton=(void 0===a&&(a=Boolean(window&&document&&document.all&&!window.atob)),a));var t=c(n=n||[],e);return function(n){if(n=n||[],"[object Array]"===Object.prototype.toString.call(n)){for(var a=0;a<t.length;a++){var o=r(t[a]);i[o].references--}for(var s=c(n,e),d=0;d<t.length;d++){var l=r(t[d]);0===i[l].references&&(i[l].updater(),i.splice(l,1))}t=s}}}},289:(n,e,t)=>{n.exports=t.p+"85bff7f211b8ad18415e.png"}},e={};function t(a){var o=e[a];if(void 0!==o)return o.exports;var i=e[a]={id:a,exports:{}};return n[a](i,i.exports,t),i.exports}t.n=n=>{var e=n&&n.__esModule?()=>n.default:()=>n;return t.d(e,{a:e}),e},t.d=(n,e)=>{for(var a in e)t.o(e,a)&&!t.o(n,a)&&Object.defineProperty(n,a,{enumerable:!0,get:e[a]})},t.o=(n,e)=>Object.prototype.hasOwnProperty.call(n,e),t.p="",(()=>{var n=t(379),e=t.n(n),a=t(772);e()(a.Z,{insert:"head",singleton:!1}),a.Z.locals;var o,i=t(289);function r(n){var e=document.createElement("div"),t=document.createElement("form");e.id="button-div";var a=new c("radio","tab-buttons","Home",!0,void console.log("test function ran from addButton.js")),o=new c("radio","tab-buttons","Menu",!1,null),r=new c("radio","tab-buttons","Contact",!1,null);t.appendChild(a.createButton),t.appendChild(o.createButton),t.appendChild(r.createButton),t.classList.add("tabForm"),e.appendChild(t),n.appendChild(e),function(n){n.appendChild(function(){var n=document.createElement("div");n.classList.add("beerDiv");var e=new Image;return e.src=i,e.classList.add("beerIcon"),n.appendChild(e),n}()),n.appendChild(function(){var n=document.createElement("div"),e=document.createElement("p");e.classList.add("intro");var t=document.createElement("p");return t.classList.add("info"),e.textContent="Welcome to the Craft Beer Factory.",t.textContent="We offer a small selection of beers, each flavor created using only our most unique blend of the industry standard ratios for hops and yeast and stuff. We brew small batches of beer with love, care, and at an industrial scale. It is our mission to make a beer so utterly average in every way that the population at large can enjoy it.",n.appendChild(e),n.appendChild(t),n}())}(n)}class c{constructor(n,e,t,a,o){this.Btype=n,this.Bname=e,this.Bvalue=t,this.Bdefault=a,this.pageLoadFunction=o}createTab(){this.pageLoadFunction()}destroyTab(){document.getElementById("tab").remove()}get createButton(){var n=document.createElement("div"),e=document.createElement("input"),t=document.createElement("label");return e.type=this.Btype,e.value=this.Bvalue,e.checked=this.Bdefault,e.name=this.Bname,e.id=this.Bvalue,t.htmlFor=this.Bvalue,t.innerHTML=this.Bvalue,n.classList.add("button"),n.appendChild(e),n.appendChild(t),this.Bdefault&&n.classList.add("activeTab"),n.addEventListener("click",(n=>{!function(n){document.getElementsByClassName("activeTab")[0].classList.remove("activeTab"),n.toElement.classList.add("activeTab")}(n),this.pageLoadFunction,this.destroyTab()})),n}}(function(n){var e=document.createElement("div");e.classList.add("navbar");var t=document.createElement("h1");t.innerText="Craft Beer Factory",t.classList.add("titleText"),e.appendChild(t),r(e),n.appendChild(e)})(document.getElementById("content")),(o=document.createElement("style")).innerHTML="\n        @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');\n        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');\n        ",document.head.appendChild(o)})()})();
+/*
+ * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+/******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/styles/styles.css":
+/*!*********************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/styles/styles.css ***!
+  \*********************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"body {\\n    background-color: #e8eddf;\\n    margin: 0px;\\n}\\n\\n\\nh1 {\\n    margin-block-start: 0em;\\n    margin-block-end: 0em;\\n    margin-inline-start: 0px;\\n    margin-inline-end: 0px;\\n    font-weight: inherit;\\n}\\n\\np {\\n    display: block;\\n    margin-block-start: 0px;\\n    margin-block-end: 0px;\\n}\\n\\n.navbar {\\n    width: 100%;\\n    height: fit-content;\\n    background-color: #333533;\\n    font-family: 'Pacifico', cursive;\\n    color: #e8eddf;\\n    display: flex;\\n    overflow: auto;\\n    flex-direction: column;\\n    align-items: center;\\n    text-align: center;\\n    font-size: 20px;\\n    padding-bottom: 0px;\\n}\\n\\n.titleText {\\n    font-weight: lighter;\\n    position: relative;\\n    top: 0px;\\n    padding-bottom: 10px;\\n}\\n\\n#button-div {\\n    width: 100%;\\n    display: flex;\\n    background-color: #242423;\\n}\\n\\n.tabForm {\\n    display: flex;\\n    justify-content: space-between;\\n    flex-grow: 1;\\n    margin-right: 0vw;\\n    margin-left: 0vw;\\n}\\n\\n.button {\\n    font-size: 25px;\\n    color: #f5cb5c;\\n    background-color: #242423;\\n    width: 100%;\\n    z-index: 100;\\n}\\n\\n\\n.button:hover {\\n    color: #f1faee;\\n    background-color:#f5cb5c;\\n}\\n\\n.activeTab {\\n    background-color: #f5cb5cdd;\\n    color: #333533;\\n}\\n\\ninput {\\n    -webkit-appearance: none;\\n    -moz-appearance: none;\\n    appearance: none;\\n    position: relative;\\n    z-index: -10;\\n\\n}\\n\\nlabel {\\n    position: relative;\\n    z-index: -10;\\n}\\n\\n.beerDiv {\\n    height: 200px;\\n}\\n\\n.beerIcon {\\n    height: 100%;\\n    margin: 22px;\\n}\\n\\n.homeTab {\\n    align-items: center;\\n    text-align: center;\\n}\\n\\n.intro {\\n    color: #242423;\\n    font-size: 25px;\\n    font-weight: bold;    \\n    font-family: 'Nunito', sans-serif;\\n    margin-top: 30px;\\n    margin-bottom: 15px;\\n}\\n\\n.info {\\n    font-family: 'Nunito', sans-serif;\\n    color: #242423;\\n    font-size: 20px;\\n    margin-right: 5vw;\\n    margin-left: 5vw;    \\n\\n}\\n\\n.mainContent {\\n}\\n\\n@media screen and (min-width: 600px) {\\n    .button {\\n      font-size: 30px;\\n    }\\n\\n    .titleText {\\n        font-size: 32px;\\n    }\\n\\n    .tabForm {\\n        margin-right: 30vw;\\n        margin-left: 30vw;    \\n    }\\n\\n    .beerDiv {\\n        height: 300px;\\n    }\\n    \\n    .intro {\\n        font-size: 40px;\\n    }\\n\\n    .info {\\n        font-size: 30px;\\n        margin-right: 15vw;\\n        margin-left: 15vw;    \\n    }\\n\\n}  \\n\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://craft-beer-factory/./src/styles/styles.css?./node_modules/css-loader/dist/cjs.js");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/api.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/api.js ***!
+  \*****************************************************/
+/***/ ((module) => {
+
+eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  Author Tobias Koppers @sokra\n*/\n// css base code, injected by the css-loader\n// eslint-disable-next-line func-names\nmodule.exports = function (cssWithMappingToString) {\n  var list = []; // return the list of modules as css string\n\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = cssWithMappingToString(item);\n\n      if (item[2]) {\n        return \"@media \".concat(item[2], \" {\").concat(content, \"}\");\n      }\n\n      return content;\n    }).join(\"\");\n  }; // import a list of modules into the list\n  // eslint-disable-next-line func-names\n\n\n  list.i = function (modules, mediaQuery, dedupe) {\n    if (typeof modules === \"string\") {\n      // eslint-disable-next-line no-param-reassign\n      modules = [[null, modules, \"\"]];\n    }\n\n    var alreadyImportedModules = {};\n\n    if (dedupe) {\n      for (var i = 0; i < this.length; i++) {\n        // eslint-disable-next-line prefer-destructuring\n        var id = this[i][0];\n\n        if (id != null) {\n          alreadyImportedModules[id] = true;\n        }\n      }\n    }\n\n    for (var _i = 0; _i < modules.length; _i++) {\n      var item = [].concat(modules[_i]);\n\n      if (dedupe && alreadyImportedModules[item[0]]) {\n        // eslint-disable-next-line no-continue\n        continue;\n      }\n\n      if (mediaQuery) {\n        if (!item[2]) {\n          item[2] = mediaQuery;\n        } else {\n          item[2] = \"\".concat(mediaQuery, \" and \").concat(item[2]);\n        }\n      }\n\n      list.push(item);\n    }\n  };\n\n  return list;\n};\n\n//# sourceURL=webpack://craft-beer-factory/./node_modules/css-loader/dist/runtime/api.js?");
+
+/***/ }),
+
+/***/ "./src/styles/styles.css":
+/*!*******************************!*\
+  !*** ./src/styles/styles.css ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_cjs_js_styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!./styles.css */ \"./node_modules/css-loader/dist/cjs.js!./src/styles/styles.css\");\n\n            \n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_styles_css__WEBPACK_IMPORTED_MODULE_1__.default, options);\n\n\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_styles_css__WEBPACK_IMPORTED_MODULE_1__.default.locals || {});\n\n//# sourceURL=webpack://craft-beer-factory/./src/styles/styles.css?");
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
+  \****************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function memorize() {\n    if (typeof memo === 'undefined') {\n      // Test for IE <= 9 as proposed by Browserhacks\n      // @see http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805\n      // Tests for existence of standard globals is to allow style-loader\n      // to operate correctly into non-standard environments\n      // @see https://github.com/webpack-contrib/style-loader/issues/177\n      memo = Boolean(window && document && document.all && !window.atob);\n    }\n\n    return memo;\n  };\n}();\n\nvar getTarget = function getTarget() {\n  var memo = {};\n  return function memorize(target) {\n    if (typeof memo[target] === 'undefined') {\n      var styleTarget = document.querySelector(target); // Special case to return head of iframe instead of iframe itself\n\n      if (window.HTMLIFrameElement && styleTarget instanceof window.HTMLIFrameElement) {\n        try {\n          // This will throw an exception if access to iframe is blocked\n          // due to cross-origin restrictions\n          styleTarget = styleTarget.contentDocument.head;\n        } catch (e) {\n          // istanbul ignore next\n          styleTarget = null;\n        }\n      }\n\n      memo[target] = styleTarget;\n    }\n\n    return memo[target];\n  };\n}();\n\nvar stylesInDom = [];\n\nfunction getIndexByIdentifier(identifier) {\n  var result = -1;\n\n  for (var i = 0; i < stylesInDom.length; i++) {\n    if (stylesInDom[i].identifier === identifier) {\n      result = i;\n      break;\n    }\n  }\n\n  return result;\n}\n\nfunction modulesToDom(list, options) {\n  var idCountMap = {};\n  var identifiers = [];\n\n  for (var i = 0; i < list.length; i++) {\n    var item = list[i];\n    var id = options.base ? item[0] + options.base : item[0];\n    var count = idCountMap[id] || 0;\n    var identifier = \"\".concat(id, \" \").concat(count);\n    idCountMap[id] = count + 1;\n    var index = getIndexByIdentifier(identifier);\n    var obj = {\n      css: item[1],\n      media: item[2],\n      sourceMap: item[3]\n    };\n\n    if (index !== -1) {\n      stylesInDom[index].references++;\n      stylesInDom[index].updater(obj);\n    } else {\n      stylesInDom.push({\n        identifier: identifier,\n        updater: addStyle(obj, options),\n        references: 1\n      });\n    }\n\n    identifiers.push(identifier);\n  }\n\n  return identifiers;\n}\n\nfunction insertStyleElement(options) {\n  var style = document.createElement('style');\n  var attributes = options.attributes || {};\n\n  if (typeof attributes.nonce === 'undefined') {\n    var nonce =  true ? __webpack_require__.nc : 0;\n\n    if (nonce) {\n      attributes.nonce = nonce;\n    }\n  }\n\n  Object.keys(attributes).forEach(function (key) {\n    style.setAttribute(key, attributes[key]);\n  });\n\n  if (typeof options.insert === 'function') {\n    options.insert(style);\n  } else {\n    var target = getTarget(options.insert || 'head');\n\n    if (!target) {\n      throw new Error(\"Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.\");\n    }\n\n    target.appendChild(style);\n  }\n\n  return style;\n}\n\nfunction removeStyleElement(style) {\n  // istanbul ignore if\n  if (style.parentNode === null) {\n    return false;\n  }\n\n  style.parentNode.removeChild(style);\n}\n/* istanbul ignore next  */\n\n\nvar replaceText = function replaceText() {\n  var textStore = [];\n  return function replace(index, replacement) {\n    textStore[index] = replacement;\n    return textStore.filter(Boolean).join('\\n');\n  };\n}();\n\nfunction applyToSingletonTag(style, index, remove, obj) {\n  var css = remove ? '' : obj.media ? \"@media \".concat(obj.media, \" {\").concat(obj.css, \"}\") : obj.css; // For old IE\n\n  /* istanbul ignore if  */\n\n  if (style.styleSheet) {\n    style.styleSheet.cssText = replaceText(index, css);\n  } else {\n    var cssNode = document.createTextNode(css);\n    var childNodes = style.childNodes;\n\n    if (childNodes[index]) {\n      style.removeChild(childNodes[index]);\n    }\n\n    if (childNodes.length) {\n      style.insertBefore(cssNode, childNodes[index]);\n    } else {\n      style.appendChild(cssNode);\n    }\n  }\n}\n\nfunction applyToTag(style, options, obj) {\n  var css = obj.css;\n  var media = obj.media;\n  var sourceMap = obj.sourceMap;\n\n  if (media) {\n    style.setAttribute('media', media);\n  } else {\n    style.removeAttribute('media');\n  }\n\n  if (sourceMap && typeof btoa !== 'undefined') {\n    css += \"\\n/*# sourceMappingURL=data:application/json;base64,\".concat(btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))), \" */\");\n  } // For old IE\n\n  /* istanbul ignore if  */\n\n\n  if (style.styleSheet) {\n    style.styleSheet.cssText = css;\n  } else {\n    while (style.firstChild) {\n      style.removeChild(style.firstChild);\n    }\n\n    style.appendChild(document.createTextNode(css));\n  }\n}\n\nvar singleton = null;\nvar singletonCounter = 0;\n\nfunction addStyle(obj, options) {\n  var style;\n  var update;\n  var remove;\n\n  if (options.singleton) {\n    var styleIndex = singletonCounter++;\n    style = singleton || (singleton = insertStyleElement(options));\n    update = applyToSingletonTag.bind(null, style, styleIndex, false);\n    remove = applyToSingletonTag.bind(null, style, styleIndex, true);\n  } else {\n    style = insertStyleElement(options);\n    update = applyToTag.bind(null, style, options);\n\n    remove = function remove() {\n      removeStyleElement(style);\n    };\n  }\n\n  update(obj);\n  return function updateStyle(newObj) {\n    if (newObj) {\n      if (newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap) {\n        return;\n      }\n\n      update(obj = newObj);\n    } else {\n      remove();\n    }\n  };\n}\n\nmodule.exports = function (list, options) {\n  options = options || {}; // Force single-tag solution on IE6-9, which has a hard limit on the # of <style>\n  // tags it will allow on a page\n\n  if (!options.singleton && typeof options.singleton !== 'boolean') {\n    options.singleton = isOldIE();\n  }\n\n  list = list || [];\n  var lastIdentifiers = modulesToDom(list, options);\n  return function update(newList) {\n    newList = newList || [];\n\n    if (Object.prototype.toString.call(newList) !== '[object Array]') {\n      return;\n    }\n\n    for (var i = 0; i < lastIdentifiers.length; i++) {\n      var identifier = lastIdentifiers[i];\n      var index = getIndexByIdentifier(identifier);\n      stylesInDom[index].references--;\n    }\n\n    var newLastIdentifiers = modulesToDom(newList, options);\n\n    for (var _i = 0; _i < lastIdentifiers.length; _i++) {\n      var _identifier = lastIdentifiers[_i];\n\n      var _index = getIndexByIdentifier(_identifier);\n\n      if (stylesInDom[_index].references === 0) {\n        stylesInDom[_index].updater();\n\n        stylesInDom.splice(_index, 1);\n      }\n    }\n\n    lastIdentifiers = newLastIdentifiers;\n  };\n};\n\n//# sourceURL=webpack://craft-beer-factory/./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js?");
+
+/***/ }),
+
+/***/ "./src/assets/beer.png":
+/*!*****************************!*\
+  !*** ./src/assets/beer.png ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"85bff7f211b8ad18415e.png\";\n\n//# sourceURL=webpack://craft-beer-factory/./src/assets/beer.png?");
+
+/***/ }),
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/styles.css */ \"./src/styles/styles.css\");\n/* harmony import */ var _page_creation_createPage_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./page-creation/createPage.js */ \"./src/page-creation/createPage.js\");\n\n\n\n\nvar content = document.getElementById(\"content\");\n(0,_page_creation_createPage_js__WEBPACK_IMPORTED_MODULE_1__.default)(content);\n\n//# sourceURL=webpack://craft-beer-factory/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/page-creation/addButtons.js":
+/*!*****************************************!*\
+  !*** ./src/page-creation/addButtons.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ addButtons)\n/* harmony export */ });\n/* harmony import */ var _createHomeTab_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./createHomeTab.js */ \"./src/page-creation/createHomeTab.js\");\n/* harmony import */ var _createMenuTab_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./createMenuTab.js */ \"./src/page-creation/createMenuTab.js\");\n/* harmony import */ var _createContactTab_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./createContactTab.js */ \"./src/page-creation/createContactTab.js\");\n/* harmony import */ var _blankSlate_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./blankSlate.js */ \"./src/page-creation/blankSlate.js\");\n\n\n\n\n\nfunction addButtons(parentElement) {\n    var buttons = document.createElement(\"div\")\n    var form = document.createElement(\"form\");\n\n    buttons.id = \"button-div\"\n\n    var homeButton = new Button(\"radio\", \"tab-buttons\", \"Home\", true, () => ((0,_createHomeTab_js__WEBPACK_IMPORTED_MODULE_0__.default)((0,_blankSlate_js__WEBPACK_IMPORTED_MODULE_3__.default)(\"homeTab\"))));\n    var menuButton = new Button(\"radio\", \"tab-buttons\", \"Menu\", false, () => ((0,_createMenuTab_js__WEBPACK_IMPORTED_MODULE_1__.default)((0,_blankSlate_js__WEBPACK_IMPORTED_MODULE_3__.default)(\"menuTab\"))));\n    var contactButton = new Button(\"radio\", \"tab-buttons\", \"Contact\", false, () => ((0,_createContactTab_js__WEBPACK_IMPORTED_MODULE_2__.default)((0,_blankSlate_js__WEBPACK_IMPORTED_MODULE_3__.default)(\"contactTab\"))));\n\n    form.appendChild(homeButton.createButton);\n    form.appendChild(menuButton.createButton);\n    form.appendChild(contactButton.createButton);\n\n    form.classList.add(\"tabForm\");\n    buttons.appendChild(form);\n\n    parentElement.appendChild(buttons);\n\n}\n\nclass Button {\n    constructor(Btype, Bname, Bvalue, Bdefault, pageLoadFunction) {\n        this.Btype = Btype;\n        this.Bname = Bname;\n        this.Bvalue = Bvalue;\n        this.Bdefault = Bdefault;\n        this.pageLoadFunction = pageLoadFunction;\n    }\n\n    get createButton() {\n        var buttonDiv = document.createElement(\"div\");\n        var buttonInput = document.createElement(\"input\");\n        var buttonLabel = document.createElement(\"label\");\n\n        buttonInput.type = this.Btype\n        buttonInput.value = this.Bvalue\n        buttonInput.checked = this.Bdefault\n        buttonInput.name = this.Bname\n        buttonInput.id = this.Bvalue\n        buttonLabel.htmlFor = this.Bvalue\n        buttonLabel.innerHTML = this.Bvalue\n\n        buttonDiv.classList.add(\"button\")\n\n        buttonDiv.appendChild(buttonInput);\n        buttonDiv.appendChild(buttonLabel);\n\n        if (this.Bdefault) {\n            buttonDiv.classList.add(\"activeTab\")\n        }\n\n        buttonDiv.addEventListener(\"click\", (e) => {\n            makeActive(e);\n            this.pageLoadFunction(_createHomeTab_js__WEBPACK_IMPORTED_MODULE_0__.default)\n        });\n\n        return buttonDiv;\n    }\n}\n\nfunction makeActive(e) {\n    var currentActive = document.getElementsByClassName(\"activeTab\");\n    currentActive[0].classList.remove(\"activeTab\");\n\n    e.toElement.classList.add(\"activeTab\")\n}   \n\n//# sourceURL=webpack://craft-beer-factory/./src/page-creation/addButtons.js?");
+
+/***/ }),
+
+/***/ "./src/page-creation/addFonts.js":
+/*!***************************************!*\
+  !*** ./src/page-creation/addFonts.js ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ addFonts)\n/* harmony export */ });\n// load fonts into header\n\nfunction addFonts() {\n    var titleFont = document.createElement(\"style\")\n    titleFont.innerHTML = `\n        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');\n        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');\n        `\n\n    document.head.appendChild(titleFont)  \n}\n\n\n\n//# sourceURL=webpack://craft-beer-factory/./src/page-creation/addFonts.js?");
+
+/***/ }),
+
+/***/ "./src/page-creation/blankSlate.js":
+/*!*****************************************!*\
+  !*** ./src/page-creation/blankSlate.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ blankSlate)\n/* harmony export */ });\nfunction blankSlate(className) {\n\n    try {\n        var mainContent = document.getElementById(\"mainContent\")\n        mainContent.remove();\n    }\n    catch (TypeError) {\n        console.log(\"Page loading for first time\")\n    }\n    finally {\n        var mainContent = document.createElement(\"div\")\n        mainContent.classList.add(className)\n        mainContent.id = \"mainContent\"\n    }\n\n    document.getElementById(\"content\").appendChild(mainContent)\n\n    return mainContent;\n}\n\n//# sourceURL=webpack://craft-beer-factory/./src/page-creation/blankSlate.js?");
+
+/***/ }),
+
+/***/ "./src/page-creation/createContactTab.js":
+/*!***********************************************!*\
+  !*** ./src/page-creation/createContactTab.js ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createContactTab)\n/* harmony export */ });\nfunction createContactTab(element) {\n    \n}\n\n//# sourceURL=webpack://craft-beer-factory/./src/page-creation/createContactTab.js?");
+
+/***/ }),
+
+/***/ "./src/page-creation/createHomeTab.js":
+/*!********************************************!*\
+  !*** ./src/page-creation/createHomeTab.js ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createHomeTab)\n/* harmony export */ });\n/* harmony import */ var _assets_beer_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../assets/beer.png */ \"./src/assets/beer.png\");\n\n\nfunction createHomeTab(parentElement) {\n    parentElement.appendChild(createBeer());\n    parentElement.appendChild(createIntro());\n}\n\nfunction createBeer() {\n    var beerDiv = document.createElement(\"div\");\n    beerDiv.classList.add(\"beerDiv\")\n\n    var beerImage = new Image();\n    beerImage.src = _assets_beer_png__WEBPACK_IMPORTED_MODULE_0__;\n    beerImage.classList.add(\"beerIcon\")\n    \n    beerDiv.appendChild(beerImage)\n\n    return beerDiv;\n}\n\nfunction createIntro() {\n\n    var menuTextDiv = document.createElement(\"div\")\n    var introDiv = document.createElement(\"p\");\n    introDiv.classList.add(\"intro\")\n    var infoDiv = document.createElement(\"p\");\n    infoDiv.classList.add(\"info\")\n\n    introDiv.textContent = \"Welcome to the Craft Beer Factory.\"\n    infoDiv.textContent = \"We offer a small selection of beers, each flavor created using only our most unique blend of the industry standard ratios for hops and yeast and stuff. We brew small batches of beer with love, care, and at an industrial scale. It is our mission to make a beer so utterly average in every way that the population at large can enjoy it.\"\n\n    menuTextDiv.appendChild(introDiv)\n    menuTextDiv.appendChild(infoDiv)\n\n    return menuTextDiv;\n}\n\n//# sourceURL=webpack://craft-beer-factory/./src/page-creation/createHomeTab.js?");
+
+/***/ }),
+
+/***/ "./src/page-creation/createMenuTab.js":
+/*!********************************************!*\
+  !*** ./src/page-creation/createMenuTab.js ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createMenuTab)\n/* harmony export */ });\nfunction createMenuTab() {\n    \n}\n\n//# sourceURL=webpack://craft-beer-factory/./src/page-creation/createMenuTab.js?");
+
+/***/ }),
+
+/***/ "./src/page-creation/createNavbar.js":
+/*!*******************************************!*\
+  !*** ./src/page-creation/createNavbar.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createNavbar)\n/* harmony export */ });\n/* harmony import */ var _addButtons_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./addButtons.js */ \"./src/page-creation/addButtons.js\");\n\n\nfunction createNavbar(element) {\n    var navbar = document.createElement(\"div\");\n    navbar.classList.add(\"navbar\");\n\n    var titleDiv = document.createElement(\"div\")\n    titleDiv.classList.add(\"titleText\")\n\n    var titleText = document.createElement(\"h1\");\n    titleText.innerText = \"Craft Beer Factory\"\n\n    titleDiv.appendChild(titleText)\n\n    navbar.appendChild(titleDiv);\n\n    (0,_addButtons_js__WEBPACK_IMPORTED_MODULE_0__.default)(navbar)\n\n    element.appendChild(navbar);\n};\n\n \n\n//# sourceURL=webpack://craft-beer-factory/./src/page-creation/createNavbar.js?");
+
+/***/ }),
+
+/***/ "./src/page-creation/createPage.js":
+/*!*****************************************!*\
+  !*** ./src/page-creation/createPage.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createPage)\n/* harmony export */ });\n/* harmony import */ var _createNavbar_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./createNavbar.js */ \"./src/page-creation/createNavbar.js\");\n/* harmony import */ var _createHomeTab_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./createHomeTab.js */ \"./src/page-creation/createHomeTab.js\");\n/* harmony import */ var _addFonts_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./addFonts.js */ \"./src/page-creation/addFonts.js\");\n/* harmony import */ var _blankSlate_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./blankSlate.js */ \"./src/page-creation/blankSlate.js\");\n\n\n\n\n\nfunction createPage(element) {\n    (0,_createNavbar_js__WEBPACK_IMPORTED_MODULE_0__.default)(element);\n    (0,_addFonts_js__WEBPACK_IMPORTED_MODULE_2__.default)();\n\n    // need this for initial pageload\n    (0,_createHomeTab_js__WEBPACK_IMPORTED_MODULE_1__.default)((0,_blankSlate_js__WEBPACK_IMPORTED_MODULE_3__.default)(\"homeTab\"));\n\n    // createImages\n    // createTabs\n    // etc\n}\n\n\n\n//# sourceURL=webpack://craft-beer-factory/./src/page-creation/createPage.js?");
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			id: moduleId,
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		__webpack_require__.p = "";
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
+/******/ 	
+/******/ })()
+;
