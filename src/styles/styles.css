@@ -3,14 +3,19 @@ body {
     margin: 0px;
 }
 
+
 h1 {
-    display: block;
-    font-size: 2em;
     margin-block-start: 0em;
     margin-block-end: 0em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    font-weight: bold;
+    font-weight: inherit;
+}
+
+p {
+    display: block;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
 }
 
 .navbar {
@@ -31,7 +36,8 @@ h1 {
 .titleText {
     font-weight: lighter;
     position: relative;
-    top: 015px;
+    top: 0px;
+    padding-bottom: 10px;
 }
 
 #button-div {
@@ -44,8 +50,8 @@ h1 {
     display: flex;
     justify-content: space-between;
     flex-grow: 1;
-    margin-right: 5vw;
-    margin-left: 5vw;
+    margin-right: 0vw;
+    margin-left: 0vw;
 }
 
 .button {
@@ -87,20 +93,33 @@ label {
 
 .beerIcon {
     height: 100%;
+    margin: 22px;
+}
+
+.homeTab {
+    align-items: center;
+    text-align: center;
 }
 
 .intro {
     color: #242423;
+    font-size: 25px;
     font-weight: bold;    
     font-family: 'Nunito', sans-serif;
-
+    margin-top: 30px;
+    margin-bottom: 15px;
 }
 
 .info {
     font-family: 'Nunito', sans-serif;
     color: #242423;
-    max-width: 80vw;
     font-size: 20px;
+    margin-right: 5vw;
+    margin-left: 5vw;    
+
+}
+
+.mainContent {
 }
 
 @media screen and (min-width: 600px) {
@@ -109,7 +128,7 @@ label {
     }
 
     .titleText {
-        font-size: 60px;
+        font-size: 32px;
     }
 
     .tabForm {
@@ -127,6 +146,8 @@ label {
 
     .info {
         font-size: 30px;
+        margin-right: 15vw;
+        margin-left: 15vw;    
     }
 
 }  

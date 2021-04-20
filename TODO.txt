@@ -1,2 +1,2 @@
-- Put the title text/h1 into it's own div so that the buttons will allign properly
-- Take the intro beer pic and description out of the navbar
+- create menuTab
+- create contactTab

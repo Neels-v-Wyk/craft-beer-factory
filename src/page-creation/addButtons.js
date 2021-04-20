@@ -1,6 +1,7 @@
 import createHomeTab from "./createHomeTab.js"
 import createMenuTab from "./createMenuTab.js"
 import createContactTab from "./createContactTab.js"
+import blankSlate from "./blankSlate.js";
 
 export default function addButtons(parentElement) {
     var buttons = document.createElement("div")
@@ -8,9 +9,9 @@ export default function addButtons(parentElement) {
 
     buttons.id = "button-div"
 
-    var homeButton = new Button("radio", "tab-buttons", "Home", true, test());
-    var menuButton = new Button("radio", "tab-buttons", "Menu", false, null);
-    var contactButton = new Button("radio", "tab-buttons", "Contact", false, null);
+    var homeButton = new Button("radio", "tab-buttons", "Home", true, () => (createHomeTab(blankSlate("homeTab"))));
+    var menuButton = new Button("radio", "tab-buttons", "Menu", false, () => (createMenuTab(blankSlate("menuTab"))));
+    var contactButton = new Button("radio", "tab-buttons", "Contact", false, () => (createContactTab(blankSlate("contactTab"))));
 
     form.appendChild(homeButton.createButton);
     form.appendChild(menuButton.createButton);
@@ -20,9 +21,7 @@ export default function addButtons(parentElement) {
     buttons.appendChild(form);
 
     parentElement.appendChild(buttons);
-    
-    // need this for initial pageload
-    createHomeTab(parentElement);
+
 }
 
 class Button {
@@ -32,14 +31,6 @@ class Button {
         this.Bvalue = Bvalue;
         this.Bdefault = Bdefault;
         this.pageLoadFunction = pageLoadFunction;
-    }
-
-    createTab() {
-        this.pageLoadFunction()
-    }
-
-    destroyTab() {
-        document.getElementById("tab").remove()
     }
 
     get createButton() {
@@ -66,8 +57,7 @@ class Button {
 
         buttonDiv.addEventListener("click", (e) => {
             makeActive(e);
-            this.pageLoadFunction
-            this.destroyTab();
+            this.pageLoadFunction(createHomeTab)
         });
 
         return buttonDiv;
@@ -79,8 +69,4 @@ function makeActive(e) {
     currentActive[0].classList.remove("activeTab");
 
     e.toElement.classList.add("activeTab")
-}
-
-function test() {
-    console.log("test function ran from addButton.js");
-}
+}   
