@@ -1,2 +1,7 @@
 - create menuTab
+  - create little blocks
+    - should have a description/name and a picture
+
 - create contactTab
+  - clickable email link
+  - maybe google maps integration
