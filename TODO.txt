@@ -8,3 +8,4 @@
 - create contactTab
   - clickable email link
   - maybe google maps integration
+  - clickable phone link
