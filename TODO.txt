@@ -1,6 +1,9 @@
 - create menuTab
   - create little blocks
     - should have a description/name and a picture
+      + when you click on it:
+        + make a little "hop" animation
+        + do an "add to cart" maybe?
 
 - create contactTab
   - clickable email link
