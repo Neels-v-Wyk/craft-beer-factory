@@ -10,9 +10,6 @@ function createPage(element) {
     // need this for initial pageload
     createHomeTab(blankSlate("homeTab"));
 
-    // createImages
-    // createTabs
-    // etc
 }
 
 export {createPage as default};

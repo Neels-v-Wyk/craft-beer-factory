@@ -10,7 +10,8 @@ function createMenuItems(){
     var golden_fluid = new menuItem("https://cdn.pixabay.com/photo/2017/06/20/22/43/beer-2425247_960_720.jpg", "Golden Fluid", "$2.99")
     var lightBeer = new menuRow([noturine, sausage_juice, golden_fluid], "BLONDES", "#faf0be")
 
-    menuItems.appendChild(lightBeer)
+    menuItems.appendChild(lightBeer.addRow)
+    menuItems.classList.add("pehis")
 
     return menuItems;
 }
@@ -27,10 +28,11 @@ class menuRow {
         var row = document.createElement("div")
 
         this.items.forEach(element => {
-            row.appendChild(element);
+            row.appendChild(element.createItem);
         });
 
-        row.appendChild(lineBreak.create(this.name, this.color))
+        var lb = new lineBreak(this.name, this.color)
+        row.appendChild(lb.create)
 
         return row;
     }
@@ -43,9 +45,38 @@ class menuItem {
         this.price = price;
     }
 
-    get createItem () {
+    get createItem() {
 
         var item = document.createElement("div");
+        item.classList.add("menuItem")
+
+        var img = document.createElement("div");
+        img.classList.add("menuItemPic")
+
+        var imgPic = document.createElement("img")
+        imgPic.classList.add("menuItemImage")
+        imgPic.src = this.imageUrl
+
+        img.appendChild(imgPic)
+
+        var desc = document.createElement("div");
+        desc.classList.add("menuItemDescription")
+
+        var descDollars = document.createElement("p");
+        descDollars.textContent = this.name
+
+        var descName = document.createElement("p");
+        descName.textContent = this.price
+
+        desc.appendChild(descDollars)
+        desc.appendChild(descName)
+
+
+
+
+        item.appendChild(img)
+        item.appendChild(desc)
+
 
         return item
     }
@@ -62,7 +93,7 @@ class lineBreak {
         var lineBreakLine = document.createElement("div")
         var lineBreakText = document.createElement("h2")
 
-        LineBreakDiv.classList.add("lineBreak")
+        lineBreakDiv.classList.add("lineBreak")
         lineBreakDiv.style.color = this.color
         lineBreakLine.classList.add("lineBreakLine")
 

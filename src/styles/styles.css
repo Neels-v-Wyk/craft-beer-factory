@@ -119,10 +119,33 @@ label {
 
 }
 
+.menuTab {
+    display: flex;
+    flex-direction: row;
+}
+
 .menuItemBreak {
     width: max-content;
     height: 2px;
     background-color: #333533;
+}
+
+.menuItem {
+    height: 100px;
+    width: 70px;
+    object-fit: cover;
+    background-color: #FFFFFF;
+}
+
+.menuItemPic {
+    height: 70%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.menuItemImage {
+    width: 100%;
+
 }
 
 @media screen and (min-width: 600px) {
