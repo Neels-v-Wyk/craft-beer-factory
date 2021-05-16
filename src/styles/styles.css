@@ -128,15 +128,35 @@ label {
     background-color: #333533;
 }
 
+.menuItems {
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+
+    justify-content: center;
+
+}
+
 .menuItem {
-    height: clamp(10px, 100px, 200px);
-    width: clamp(10px, 100px, 200px);
+    height: 150px;
+    width: 100px;
     object-fit: cover;
     background-color: #FFFFFF;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.menuItemRow {
+    display: flex;
+    flex-flow:row wrap;
+    flex: auto;
+    justify-content: center;
+    max-width: 500px;
 }
 
 .menuItemPic {
-    height: 70%;
+    height: 80%;
     width: 100%;
     overflow: hidden;
     display: flex;
@@ -147,6 +167,17 @@ label {
 .menuItemImage {
     height: 100%;
 }
+
+.menuItemDescription {
+    font-size: 14.5px;
+    font-weight: bold;    
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: -5px;
+  }
 
 .lineBreakLine {
     width: 20%;
@@ -182,5 +213,17 @@ label {
         margin-left: 15vw;    
     }
 
+    .menuItem {
+        height: 250px;
+        width: 150px;
+    }
+
+    .menuItemRow {
+        max-width: 600px;
+    }
+
+    .menuItemDescription {
+        font-size: 20px;
+    }
 }  
 
