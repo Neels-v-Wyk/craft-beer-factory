@@ -4,15 +4,17 @@ export default function createMenuTab(parentElement) {
 
 function createMenuItems(){
     var menuItems = document.createElement("div");
+    menuItems.classList.add("menuItems")
 
-    var noturine = new menuItem("https://i0.hippopx.com/photos/532/903/624/beer-drink-drinking-preview.jpg", "Noturiné", "$3.99")
+    var noturine = new menuItem("//live.staticflickr.com/4879/32531507678_821f982b1a_b.jpg", "Noturiné", "$3.99")
     var sausage_juice = new menuItem("https://live.staticflickr.com/65535/48320318901_bca39d721e_k.jpg", "Sausage Juice", "$3.49")
     var golden_fluid = new menuItem("https://cdn.pixabay.com/photo/2017/06/20/22/43/beer-2425247_960_720.jpg", "Golden Fluid", "$2.99")
-    var lightBeer = new menuRow([noturine, sausage_juice, golden_fluid], "BLONDES", "#faf0be")
+    var peene_sap = new menuItem("https://get.pxhere.com/photo/drink-beer-glass-beer-lager-pint-glass-pint-alcoholic-beverage-Bia-h-i-beer-stein-beer-cocktail-mug-drinkware-cider-Ice-beer-distilled-beverage-non-alcoholic-beverage-tableware-1619184.jpg", "Peene Sap", "$3.14")
+
+    // I'm too lazy to refactor the code, the last two parameters to menuRow() are useless
+    var lightBeer = new menuRow([noturine, sausage_juice, golden_fluid, peene_sap], "BEERS YO", "#faf0be")
 
     menuItems.appendChild(lightBeer.addRow)
-    menuItems.classList.add("pehis")
-
     return menuItems;
 }
 
@@ -31,8 +33,9 @@ class menuRow {
             row.appendChild(element.createItem);
         });
 
-        var lb = new lineBreak(this.name, this.color)
-        row.appendChild(lb.create)
+        // var lb = new lineBreak(this.name, this.color)
+        // row.appendChild(lb.create)
+        row.classList.add("menuItemRow")
 
         return row;
     }
@@ -71,9 +74,6 @@ class menuItem {
         desc.appendChild(descDollars)
         desc.appendChild(descName)
 
-
-
-
         item.appendChild(img)
         item.appendChild(desc)
 
@@ -81,6 +81,8 @@ class menuItem {
         return item
     }
 }
+
+// line breaks aren't used right now because the way I implemented them is trash
 
 class lineBreak {
     constructor(name, color) {
@@ -90,18 +92,24 @@ class lineBreak {
 
     get create(){
         var lineBreakDiv = document.createElement("div")
-        var lineBreakLine = document.createElement("div")
+        var lineBreakLine1 = document.createElement("div")
+        var lineBreakLine2 = document.createElement("div")
         var lineBreakText = document.createElement("h2")
 
         lineBreakDiv.classList.add("lineBreak")
         lineBreakDiv.style.color = this.color
-        lineBreakLine.classList.add("lineBreakLine")
+        lineBreakLine1.classList.add("lineBreakLine")
+        lineBreakLine2.classList.add("lineBreakLine")
+        lineBreakDiv.style.color = this.color
+        lineBreakLine1.style.backgroundColor = this.color
+        lineBreakLine2.style.backgroundColor = this.color
+
 
         lineBreakText.textContent = this.name
 
-        lineBreakDiv.appendChild(lineBreakLine)
+        lineBreakDiv.appendChild(lineBreakLine1)
         lineBreakDiv.appendChild(lineBreakText)
-        lineBreakDiv.appendChild(lineBreakLine)
+        lineBreakDiv.appendChild(lineBreakLine2)
 
         return lineBreakDiv;
     }
